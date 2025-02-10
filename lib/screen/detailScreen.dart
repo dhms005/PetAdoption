@@ -17,7 +17,7 @@ class DetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(pet.name)),
+      appBar: AppBar(title: const Text("Pet Details")),
       body: Container(
         color: AppColors.mainBgColor,
         child: Column(

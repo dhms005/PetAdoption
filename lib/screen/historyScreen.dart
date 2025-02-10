@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:petadoption/blocs/petBloc.dart';
 import 'package:petadoption/blocs/petState.dart';
 import 'package:petadoption/screen/detailScreen.dart';
+import 'package:petadoption/widgetUI/mainListItem.dart';
 
 class HistoryPage extends StatefulWidget {
   @override
@@ -36,6 +37,17 @@ class _HistoryPageState extends State<HistoryPage> {
                     itemCount: filteredPets.length,
                     itemBuilder: (context, index) {
                       final pet = filteredPets[index];
+
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                              builder: (context) =>
+                              DetailsScreen(pet: pet)),
+                          );
+                        },
+                        child: MainListItem(pet: pet),);
 
                       return Card(
                         elevation: 4,

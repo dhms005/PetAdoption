@@ -5,7 +5,6 @@ import 'package:petadoption/blocs/petState.dart';
 import 'package:petadoption/screen/detailScreen.dart';
 import 'package:petadoption/screen/historyScreen.dart';
 import 'package:petadoption/utils/appColors.dart';
-import 'package:petadoption/widgetUI/cartItem.dart';
 import 'package:petadoption/widgetUI/mainListItem.dart';
 
 class HomeScreen extends StatefulWidget {

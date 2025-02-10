@@ -2,7 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:petadoption/blocs/petEvent.dart';
 import 'package:petadoption/blocs/petState.dart';
 import 'package:petadoption/repository/petRepository.dart';
-import '../models/pet.dart';
+import '../models/Pet.dart';
 
 class PetBloc extends Bloc<PetEvent, PetState> {
   final PetRepository petRepository;
@@ -32,6 +32,8 @@ class PetBloc extends Bloc<PetEvent, PetState> {
             image: pet.image,
             isAdopted: true,
             price: pet.price,
+            gender: pet.gender,
+            address: pet.address,
           );
         }
         return pet;

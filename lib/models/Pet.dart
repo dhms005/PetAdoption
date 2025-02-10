@@ -4,6 +4,8 @@ class Pet {
   final String image;
   final bool isAdopted;
   final String price;
+  final String address;
+  final String gender;
 
   Pet({
     required this.name,
@@ -11,6 +13,8 @@ class Pet {
     required this.image,
     required this.isAdopted,
     required this.price,
+    required this.address,
+    required this.gender,
   });
 
   factory Pet.fromMap(Map<String, dynamic> data) {
@@ -20,6 +24,8 @@ class Pet {
       image: data['image'] ?? '',
       isAdopted: data['isAdopted'] ?? false,
       price: data['price'] ?? '',
+      address: data['address'] ?? '',
+      gender: data['gender'] ?? '',
     );
   }
 }

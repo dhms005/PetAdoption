@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:petadoption/blocs/petBloc.dart';
 import 'package:petadoption/blocs/petEvent.dart';
 
-import '../models/pet.dart';
+import '../models/Pet.dart';
 
 class DetailsScreen extends StatelessWidget {
   final Pet pet;

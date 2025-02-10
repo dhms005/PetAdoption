@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import '../models/pet.dart';
+import '../models/Pet.dart';
 
 class PetRepository {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;

@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import '../models/pet.dart';
+import '../models/Pet.dart';
 
 abstract class PetState extends Equatable {
   @override

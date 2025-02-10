@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:petadoption/models/Pet.dart';
 import 'package:petadoption/utils/appColors.dart';

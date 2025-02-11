@@ -2,7 +2,7 @@ class Pet {
   final String name;
   final String age;
   final String image;
-  final bool isAdopted;
+  bool isAdopted;
   final String price;
   final String address;
   final String gender;
@@ -28,4 +28,11 @@ class Pet {
       gender: data['gender'] ?? '',
     );
   }
+
+  //
+  void adopt() {
+    isAdopted = true;
+  }
+
+
 }
